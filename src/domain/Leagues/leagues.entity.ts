@@ -1,27 +1,32 @@
 export type LeagueProps = {
-  campeonato_id: number;
-  nome: string;
+  leagueId: number;
+  name: string;
   slug: string;
-  nome_popular: string;
-  edicao_atual: {
-    edicao_id: number;
-    temporada: string;
-    nome: string;
-    nome_popular: string;
+  popularName: string;
+  currentEdition: {
+    editionId: number;
+    season: string;
+    name: string;
+    popularName: string;
     slug: string;
   };
-  fase_atual: {
-    fase_id: number;
-    nome: string;
+  currentFase: {
+    faseId: number;
+    name: string;
     slug: string;
-    tipo: string;
+    type: string;
     _link: string;
   };
-  rodada_atual?: string;
-  status: string;
-  tipo: string;
-  logo: string;
-  regiao: string;
+  currentRound?: {
+    name?: string;
+    slug?: string;
+    round?: number;
+    status?: string;
+  };
+  status?: string;
+  type?: string;
+  logo?: string;
+  country: string;
   _link: string;
 };
 

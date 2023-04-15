@@ -1,0 +1,65 @@
+export const leaguePropsMock = {
+  leagueId: 14,
+  name: "Campeonato Brasileiro Série B",
+  slug: "campeonato-brasileiro-serie-b",
+  popularName: "Brasileirão Série B",
+  currentEdition: {
+    editionId: 80,
+    season: "2023",
+    name: "Campeonato Brasileiro Série B 2023",
+    popularName: "Brasileirão Série B 2023",
+    slug: "campeonato-brasileiro-serie-b-2023",
+  },
+  currentFase: {
+    faseId: 371,
+    name: "Fase Única",
+    slug: "fase-unica",
+    type: "pontos-corridos",
+    _link: "/v1/campeonatos/14/fases/371",
+  },
+  currentRound: {
+    name: "1ª Rodada",
+    slug: "1a-rodada",
+    round: 1,
+    status: "agendada",
+  },
+  status: "agendado",
+  type: "Pontos Corridos",
+  logo: "https://api.api-futebol.com.br/images/competicao/brasileiro-serieb.png",
+  country: "nacional",
+  _link: "/v1/campeonatos/14",
+};
+
+export const leaguePropsRepositoryMock = [
+  {
+    campeonato_id: 14,
+    nome: "Campeonato Brasileiro Série B",
+    slug: "campeonato-brasileiro-serie-b",
+    nome_popular: "Brasileirão Série B",
+    edicao_atual: {
+      edicao_id: 80,
+      temporada: "2023",
+      nome: "Campeonato Brasileiro Série B 2023",
+      nome_popular: "Brasileirão Série B 2023",
+      slug: "campeonato-brasileiro-serie-b-2023",
+    },
+    fase_atual: {
+      fase_id: 371,
+      nome: "Fase Única",
+      slug: "fase-unica",
+      tipo: "pontos-corridos",
+      _link: "/v1/campeonatos/14/fases/371",
+    },
+    rodada_atual: {
+      nome: "1ª Rodada",
+      slug: "1a-rodada",
+      rodada: 1,
+      status: "agendada",
+    },
+    status: "agendado",
+    tipo: "Pontos Corridos",
+    logo: "https://api.api-futebol.com.br/images/competicao/brasileiro-serieb.png",
+    regiao: "nacional",
+    _link: "/v1/campeonatos/14",
+  },
+];
