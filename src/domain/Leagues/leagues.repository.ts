@@ -1,6 +1,6 @@
 import { LeaguePropsRepository } from "../../lib/leagues";
-import { League, LeagueProps } from "./leagues.entity";
+import { League } from "./leagues.entity";
 
 export interface LeagueRepositoryInterface {
-  findAll(): Promise<LeagueProps[]>;
+  findAll(): Promise<LeaguePropsRepository[]>;
 }

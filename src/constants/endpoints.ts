@@ -1,1 +1,1 @@
-export const LEAGUES = "/campeonatos";
+export const LEAGUES = "/leagues";

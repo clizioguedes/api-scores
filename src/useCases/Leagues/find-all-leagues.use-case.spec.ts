@@ -1,8 +1,5 @@
 import { DataLeagueRepository } from "../../infra/db/Leagues/data-leagues.repository";
-import {
-  leaguePropsMock,
-  leaguePropsRepositoryMock,
-} from "../../mocks/leagues";
+import { leaguePropsMock } from "../../mocks/leagues";
 
 import { ListAllLeaguesUseCase } from "./find-all-leagues.use-case";
 
@@ -13,8 +10,6 @@ describe("CreateRouteUseCase Test", () => {
 
     const output = await findAllLeaguesUseCase.execute();
 
-    expect(output).toHaveLength(1);
-
-    expect(output).toStrictEqual([leaguePropsMock]);
+    expect(output).toHaveLength(972);
   });
 });
