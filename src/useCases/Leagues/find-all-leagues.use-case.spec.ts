@@ -1,5 +1,4 @@
 import { DataLeagueRepository } from "../../infra/db/Leagues/data-leagues.repository";
-import { leaguePropsMock } from "../../mocks/leagues";
 
 import { ListAllLeaguesUseCase } from "./find-all-leagues.use-case";
 

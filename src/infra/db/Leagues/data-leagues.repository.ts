@@ -2,7 +2,8 @@ import { LeagueRepositoryInterface } from "../../../domain/Leagues/leagues.repos
 
 import instance from "../../../services/api";
 import { LEAGUES } from "../../../constants/endpoints";
-import { LeaguePropsRepository, getLeagues } from "../../../lib/leagues";
+import { getLeagues } from "../../../lib/leagues";
+import { LeaguePropsRepository } from "../../../domain/Leagues/leagues.entity";
 
 export class DataLeagueRepository implements LeagueRepositoryInterface {
   async findAll(): Promise<LeaguePropsRepository[]> {
