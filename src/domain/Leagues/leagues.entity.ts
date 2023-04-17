@@ -1,39 +1,25 @@
-export type Seasons = {
-  year: number;
-  start: string;
-  end: string;
-  current: boolean;
-  coverage: {
-    fixtures: {
-      events: boolean;
-      lineups: boolean;
-      statistics_fixtures: boolean;
-      statistics_players: boolean;
-    };
-    standings: boolean;
-    players: boolean;
-    top_scorers: boolean;
-    top_assists: boolean;
-    top_cards: boolean;
-    injuries: boolean;
-    predictions: boolean;
-    odds: boolean;
-  };
-};
-
 export type LeaguePropsRepository = {
-  league: {
+  id: number;
+  area: {
     id: number;
     name: string;
-    type: string;
-    logo: string;
+    code: string;
+    flag?: string | null;
   };
-  country: {
-    name: number;
-    code?: string;
-    flag?: string;
+  name: string;
+  code: string;
+  type: string;
+  emblem?: string | null;
+  plan: string;
+  currentSeason: {
+    id: number;
+    startDate: string;
+    endDate: string;
+    currentMatchday: number;
+    winner?: null | null;
   };
-  seasons: Seasons[];
+  numberOfAvailableSeasons: number;
+  lastUpdated: string;
 };
 
 export class League {

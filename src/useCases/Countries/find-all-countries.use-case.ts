@@ -5,8 +5,8 @@ export class ListAllLCountriesUseCase {
   constructor(private leagueRepo: CountryRepositoryInterface) {}
 
   async execute(): Promise<CountryPropsRepository[]> {
-    const leagues = await this.leagueRepo.findAll();
+    const countries = await this.leagueRepo.findAll();
 
-    return leagues;
+    return countries;
   }
 }

@@ -1,7 +1,10 @@
 export type CountryPropsRepository = {
+  id: number;
   name: string;
-  code: string;
-  flag: string;
+  countryCode: string;
+  flag: string | null;
+  parentAreaId: number;
+  parentArea: string;
 };
 
 export class Country {

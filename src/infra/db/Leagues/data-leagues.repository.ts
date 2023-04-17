@@ -10,7 +10,7 @@ export class DataLeagueRepository implements LeagueRepositoryInterface {
     const leagues: LeaguePropsRepository[] = await instance
       .get(LEAGUES)
       .then((response) => {
-        return response.data.response;
+        return response.data.competitions;
       })
       .catch((err: Error) => {
         console.log("error", err);
@@ -18,6 +18,6 @@ export class DataLeagueRepository implements LeagueRepositoryInterface {
         throw new Error("Por favor verifique a requisição da API Sports"); // IMPORTANT! throw unless you intend to suppress the error
       });
 
-    return getLeagues(leagues);
+    return leagues;
   }
 }

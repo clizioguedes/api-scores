@@ -1,2 +1,2 @@
-export const LEAGUES = "/leagues";
-export const COUNTRIES = "/countries";
+export const LEAGUES = "/competitions";
+export const COUNTRIES = "/areas";

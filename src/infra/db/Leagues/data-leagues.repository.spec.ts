@@ -6,6 +6,6 @@ describe("League Repository Test", () => {
 
     const leagues = await repository.findAll();
 
-    expect(leagues).toHaveLength(972);
+    expect(leagues).toHaveLength(13);
   });
 });

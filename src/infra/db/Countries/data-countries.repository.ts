@@ -8,7 +8,7 @@ export class DataCountryRepository implements CountryRepositoryInterface {
     const countries: CountryPropsRepository[] = await instance
       .get(COUNTRIES)
       .then((response) => {
-        return response.data.response;
+        return response.data.areas;
       })
       .catch((err: Error) => {
         console.log("error", err);

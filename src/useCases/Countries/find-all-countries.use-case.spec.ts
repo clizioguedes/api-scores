@@ -8,6 +8,6 @@ describe("CreateRouteUseCase Test", () => {
 
     const output = await findAllCountriesUseCase.execute();
 
-    expect(output).toHaveLength(972);
+    expect(output).toHaveLength(272);
   });
 });
