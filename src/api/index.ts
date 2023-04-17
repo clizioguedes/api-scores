@@ -2,7 +2,8 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import express, { Express } from "express";
-import routes from "./routes";
+
+import routes from "../infra/http/express/routes";
 
 const app: Express = express();
 app.use(express.json());
