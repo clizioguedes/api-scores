@@ -3,6 +3,7 @@ import { LeagueController } from "../../../controllers/leagues.controller";
 import { CountryController } from "../../../controllers/countries.controller";
 
 import cors from "cors";
+import { StandingsController } from "../../../controllers/standings.controller";
 
 const options: cors.CorsOptions = {
   methods: "*",
@@ -13,12 +14,21 @@ const router = Router();
 
 router.use(cors(options));
 
-// Countries
 const countryController = new CountryController();
+const leagueController = new LeagueController();
+const stardingController = new StandingsController();
+
+// Countries
 router.get("/countries", countryController.findAll);
 
 // Leagues
-const leagueController = new LeagueController();
 router.get("/leagues", leagueController.findAll);
+router.get("/leagues/:code", leagueController.findLeagueByCode);
+
+// Standings
+router.get(
+  "/leagues/:code/standing",
+  stardingController.findStandingLeagueById
+);
 
 export default router;

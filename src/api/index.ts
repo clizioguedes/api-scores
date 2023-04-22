@@ -8,7 +8,7 @@ import routes from "../infra/http/express/routes";
 const app: Express = express();
 app.use(express.json());
 
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5002;
 
 app.use(routes);
 
