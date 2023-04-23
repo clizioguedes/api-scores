@@ -18,7 +18,6 @@ export class DataLeagueRepository implements LeagueRepositoryInterface {
       })
       .catch((err: Error) => {
         console.log("error", err);
-
         throw new Error(
           "Por favor verifique a requisição de listagem das ligas na API do Football Data"
         ); // IMPORTANT! throw unless you intend to suppress the error

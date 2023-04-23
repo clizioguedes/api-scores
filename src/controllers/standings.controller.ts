@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
-import { FindStandingLeagueByIdUseCase } from "../useCases/Leagues/find-standing-league-by-id";
-import { DataStandingRepository } from "../infra/db/Leagues/data-standing.repository";
+
+import { DataStandingRepository } from "../infra/db/Standings/data-standing.repository";
+import { FindStandingLeagueByIdUseCase } from "../useCases/Standings/find-standing-league-by-id";
 
 export class StandingsController {
   async findStandingLeagueById(request: Request, response: Response) {
@@ -16,16 +17,4 @@ export class StandingsController {
 
     return response.status(200).json(output);
   }
-
-  // async matchesLeagueById(request: Request, response: Response) {
-  //   const { id } = request.params;
-
-  //   const leagueRepo = new DataLeagueRepository();
-
-  //   const findStandingById = new FindLeagueByCodeUseCase(leagueRepo);
-
-  //   const output = await findLeagueByCode.execute(id);
-
-  //   return response.status(200).json(output);
-  // }
 }

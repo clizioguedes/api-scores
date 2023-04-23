@@ -1,5 +1,5 @@
 import { StandingPropsRepository } from "../../domain/Standing/standing.entity";
-import { DataStandingRepository } from "../../infra/db/Leagues/data-standing.repository";
+import { DataStandingRepository } from "../../infra/db/Standings/data-standing.repository";
 
 export class FindStandingLeagueByIdUseCase {
   constructor(private standingRepo: DataStandingRepository) {}

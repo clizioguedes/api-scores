@@ -12,7 +12,6 @@ export class DataCountryRepository implements CountryRepositoryInterface {
       })
       .catch((err: Error) => {
         console.log("error", err);
-
         throw new Error("Por favor verifique a requisição da API Sports"); // IMPORTANT! throw unless you intend to suppress the error
       });
 
