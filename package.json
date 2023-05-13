@@ -1,8 +1,8 @@
 {
-  "name": "clean-arch-typescript",
+  "name": "scores",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "API for live scores and standing leagues",
+  "main": "src/api/index.ts",
   "scripts": {
     "test": "jest",
     "start": "node src/api/index.ts",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clizioguedes/clean-arch-typescript.git"
+    "url": "git+https://github.com/clizioguedes/api-scores.git"
   },
   "author": "Clizio Guedes",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/clizioguedes/clean-arch-typescript/issues"
+    "url": "https://github.com/clizioguedes/api-scores.git/issues"
   },
-  "homepage": "https://github.com/clizioguedes/clean-arch-typescript#readme",
+  "homepage": "https://github.com/clizioguedes/api-scores.git#readme",
   "devDependencies": {
     "@swc/core": "^1.3.41",
     "@swc/jest": "^0.2.24",
