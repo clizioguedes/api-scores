@@ -1,4 +1,4 @@
-# Projeto de CRUD utilizando o padrão de arquitetura limpa
+# API live scores and standing leagues
 
 ## Languages / Libs
 
